@@ -42,12 +42,11 @@ puts("Data Sent\n");
 //RECEIVE A REPLY FROM THE SERVER
 if(recv(socd, server_reply, 2000, 0)<0) {
 puts("Receive failed");
-
-close(socd);
 return 1;
 }
 
 puts("Receive Data");
 
+close(socd);
 return 0;
 }
