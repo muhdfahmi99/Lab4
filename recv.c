@@ -19,7 +19,7 @@ printf("Could not create socket");
 server.sin_addr.s_addr = inet_addr("192.168.208.9"); 
 //PLEASE ENTER THE IP ADDRESS OF YOUR SERVER VM
 server.sin_family = AF_INET;
-server.sin_port =  htons(22);
+server.sin_port =  htons(8888);
 
 //CONNECT TO REMOVE SERVER
 if(connect(socd, (struct sockaddr *)&server, sizeof(server))<0) {
